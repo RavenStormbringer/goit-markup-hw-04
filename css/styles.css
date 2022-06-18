@@ -197,6 +197,7 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
+    border: 0px;
     color: var(--main-color);
     background-color: #2196F3;
     padding-top: 10px;
@@ -313,7 +314,9 @@ button {
     flex-basis: calc(100% - 90px) / 3;
     margin-left: 30px;
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.16);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -578,6 +581,7 @@ button {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    border: 0px;
     color: var(--pre-main-color);
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -591,6 +595,9 @@ button {
 .pre-main-button:focus {
     color: #FFFFFF;
     background-color: #188ce8;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery {
