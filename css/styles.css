@@ -1,8 +1,9 @@
 :root {
     --main-color: #FFFFFF;
-    --pre-main-color: #2F303A;
+    --pre-main-color: #212121;
     --hover-color: #2196F3;
     --text-color: #757575;
+    --svg-links-color: #afb1b8;
 }
 
 p,
@@ -90,7 +91,7 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--pre-main-color)
+    color: var(--text-color)
 }
 
 .header-link:hover,
@@ -114,6 +115,10 @@ button {
     margin-right: 50px;
 }
 
+.header-link {
+    color: var(--pre-main-color);
+}
+
 .header-contacts {
     display: flex;
     margin-left: auto;
@@ -128,6 +133,9 @@ button {
     color: var(--text-color);
     padding: 32px 0;
     margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-phone {
@@ -138,14 +146,24 @@ button {
     letter-spacing: 0.02em;
     color: var(--text-color);
     padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.header-svg {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+
 
 
 
 
 .section-one {
     background-color: #C4C4C4;
-    background-image: url(../img/Img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -180,17 +198,19 @@ button {
     letter-spacing: 0.06em;
     border-radius: 4px;
     color: var(--main-color);
+    background-color: #2196F3;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
-
 }
 
 .main-button:hover,
 .main-button:focus {
-    color: var(--main-color);
+    background-color: #188ce8;
 }
+
+
 
 
 
@@ -224,12 +244,25 @@ button {
     max-width: 260px;
 }
 
+.company-ben {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;     
+}
+
+
+
+
+
 
 
 
 .section-three {
     padding-bottom: 94px;
-
 }
 
 .pre-main-title {
@@ -249,6 +282,9 @@ button {
 .about-work+.about-work {
     margin-left: 30px;
 }
+
+
+
 
 
 
@@ -339,54 +375,56 @@ button {
 .masters-soc-link:hover,
 .masters-soc-link:focus {
     background-color: #2196F3;
-    color: var(--main-color);
+    color: #FFFFFF;
 }
 
 
 
-.company-invite {
-    padding-top: 72px;
-    padding-bottom: 100px;
-    margin-left: 70px;
+
+
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.company-soc-list {
+.clients-list {
     display: flex;
     justify-content: center;
 }
 
-.company-soc-item {
-    width: 44px;
-    height: 44px;
-    margin-left: 10px;
+.company-clients {
+    width: 170px;
+    height: 92px;
 }
 
-.company-soc-item :first-child {
-    margin-left: 0;
+.company-clients+.company-clients {
+    margin-left: 30px;
 }
 
-.company-soc-link {
+.company-clients-link {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    background-color: #FFFFFF;
+    border-top: 1px solid #AFB1B8;
+    border-bottom: 1px solid #AFB1B8;
+    border-left: 1px solid #AFB1B8;
+    border-right: 1px solid #AFB1B8;
+    border-radius: 4px;
     color: #AFB1B8;
 }
 
-.company-soc-icon {
+.company-clients-icon {
     fill: currentColor;
 }
 
-.company-soc-link:hover,
-.company-soc-link:focus {
-    background-color: #2196F3;
-    color: var(--main-color);
+.company-clients-link:hover,
+.company-clients-link:focus {
+    border-color: #2196F3;
+    color: #2196F3;
 }
-
-
 
 
 
@@ -394,7 +432,7 @@ button {
 
 
 .footer {
-    background: var(--pre-main-color);
+    background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -408,6 +446,15 @@ button {
     padding-top: 60px;
     padding-bottom: 161px;
     color: var(--main-color);
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.adress-container {
+    margin-right: 70px;
 }
 
 .adress {
@@ -437,7 +484,6 @@ button {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
 }
 
 .footer-phone {
@@ -450,6 +496,57 @@ button {
     margin-bottom: 60px;
 }
 
+.soc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.company-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.company-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+}
+
+.company-soc-item :first-child {
+    margin-left:0;
+}
+
+.company-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+
+.company-soc-icon {
+    fill: currentColor;
+}
+
+.company-soc-link:hover,
+.company-soc-link:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+
+
+
 .header-two {
     border-bottom: 1px solid #ECECEC;
 }
@@ -457,7 +554,6 @@ button {
 .header-two .container {
     display: flex;
     align-items: center;
-
 }
 
 .portfolio {
@@ -482,8 +578,9 @@ button {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    border-radius: 4px;
     color: var(--pre-main-color);
+    background-color: #F5F4FA;
+    border-radius: 4px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
@@ -492,7 +589,8 @@ button {
 
 .pre-main-button:hover,
 .pre-main-button:focus {
-    color: var(--main-color);
+    color: #FFFFFF;
+    background-color: #188ce8;
 }
 
 .gallery {
@@ -504,6 +602,13 @@ button {
 .gallery-item {
     flex-basis: calc(100% / 3 - 30px);
     margin: 15px;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-div {
@@ -531,3 +636,4 @@ button {
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
+
