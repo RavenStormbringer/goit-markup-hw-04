@@ -69,18 +69,18 @@ button {
     line-height: 1.29;
     letter-spacing: 0.03em;
     color: var(--hover-color);
+    margin-right: 46.5px;
 }
 
 .header-logoo {
-    color: var(--pre-main-color);
-    margin-right: 93px;
+    color: var(--pre-main-color);  
 }
 
 .header .logo {
     display: block;
     padding: 24px 0 25px 0;
-    margin-right: 93px;
 }
+
 
 .link {
     text-decoration: none;
@@ -440,14 +440,7 @@ button {
     padding-bottom: 60px;
 }
 
-.footer-logo {
-    padding-top: 60px;
-    padding-bottom: 161px;
-}
-
 .footer-logoo {
-    padding-top: 60px;
-    padding-bottom: 161px;
     color: var(--main-color);
 }
 
@@ -534,7 +527,12 @@ button {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    color: #FFFFFF;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    color: #FFFFFF;    
+}
+
+.team .company-soc-link {
+    color: #afb1b8;
 }
 
 .company-soc-icon {
